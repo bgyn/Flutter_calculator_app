@@ -13,7 +13,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Calculator',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(primarySwatch: Colors.amber),
+      theme:
+          ThemeData(primarySwatch: Colors.amber, brightness: Brightness.light),
       darkTheme: ThemeData(brightness: Brightness.dark),
       home: homeScreen(),
     );

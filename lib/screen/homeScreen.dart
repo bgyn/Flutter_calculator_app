@@ -33,6 +33,7 @@ class _homeScreenState extends State<homeScreen> {
         ContextModel cm = ContextModel();
         double eval = exp.evaluate(EvaluationType.REAL, cm);
         output = eval.toString();
+        input = '';
       }
     } else {
       input = input + key;
@@ -91,7 +92,7 @@ class _homeScreenState extends State<homeScreen> {
               button(text: "7"),
               button(text: "8"),
               button(text: "9"),
-              button(text: "x", btnBgColor: Colors.amber),
+              button(text: "*", btnBgColor: Colors.amber),
             ],
           ),
           Row(
